@@ -1,0 +1,97 @@
+@media screen and (max-width: 576px) {
+  header {
+    nav {
+      .mobile_open {
+        margin-left: auto;
+      }
+    }
+    .welcome {
+      padding: 100px 20px;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  #about {
+    .container {
+      .about_content {
+        .content_bottom {
+          hr {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+  #skills {
+    .container {
+      width: 80%;
+      .skills_top {
+        button {
+          font-size: 18px;
+          &:hover {
+            font-size: 20px;
+          }
+        }
+      }
+      .tabs_content {
+        font-size: 14px;
+      }
+    }
+  }
+  #portfolio {
+    .container {
+      width: 95%;
+      margin: 0 auto;
+      .portfolio_buttons {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        button {
+          width: 100px;
+          font-size: 15px;
+          padding: 10px 5px;
+        }
+      }
+      .portfolio_content {
+        .content {
+          flex-direction: column;
+          row-gap: 50px;
+          .content_css,
+          .content_js,
+          .content_react {
+            width: 100%;
+            height: 50%;
+            .content_img {
+              width: 100%;
+              height: 50%;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #faq {
+    .container {
+      .title {
+        font-size: 24px;
+      }
+      .questions-container {
+        .question {
+          button {
+            font-size: 18px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

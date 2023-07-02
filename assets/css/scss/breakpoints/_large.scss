@@ -1,0 +1,42 @@
+@media screen and (max-width: 1200px) {
+  header {
+    nav {
+      .nav_items {
+        margin-left: 100px;
+      }
+    }
+  }
+  #about {
+    .container {
+      width: 90%;
+      padding: 50px;
+    }
+  }
+  #skills {
+    .container {
+      width: 65%;
+    }
+  }
+  #portfolio {
+    .container {
+      .portfolio_content {
+        .content {
+          .content_css,
+          .content_js,
+          .content_react {
+            width: 400px;
+            height: 250px;
+            .content_img {
+              width: 400px;
+              height: 250px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "./scss/base/reset";
+
+@import "./scss/abstracts/variables";
+
+@import "./scss/layout/header";
+@import "./scss/layout/about";
+@import "./scss/layout/skills";
+@import "./scss/layout/portfolio";
+@import "./scss/layout/testimonials";
+@import "./scss/layout/faq";
+@import "./scss/layout/contact";
+@import "./scss/layout/footer";
+
+@import "./scss/breakpoints/large";
+@import "./scss/breakpoints/medium";
+@import "./scss/breakpoints/small";
+@import "./scss/breakpoints/extra-small";
+

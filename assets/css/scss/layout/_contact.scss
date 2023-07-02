@@ -1,0 +1,123 @@
+#contact {
+  width: 100%;
+  background-color: $primary-color;
+  .container {
+    width: 80%;
+    min-height: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+    form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      border: 4px solid $third-color;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      padding: 10px;
+      h2 {
+        color: $secondary-color;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 26px;
+      }
+      .contact_name,
+      .contact_email {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $third-color;
+        padding: 5px 15px 5px 2px;
+        width: auto;
+        background-color: transparent;
+        color: $secondary-color;
+        font-size: 17px;
+        transition: all 0.4s ease-in-out;
+        &::placeholder {
+          color: $secondary-color;
+        }
+      }
+      textarea {
+        background-color: $third-color;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: $secondary-color;
+        font-size: 17px;
+        &::placeholder {
+          color: $secondary-color;
+        }
+      }
+      input[type="submit"] {
+        width: 200px;
+        height: 40px;
+        padding: 10px;
+        font-size: 18px;
+        color: $secondary-color;
+        background-color: $third-color;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        align-self: center;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: $third-color;
+          background-color: $secondary-color;
+          border: 1px solid $secondary-color;
+        }
+      }
+      .error {
+        color: $error-color;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        font-size: 14px;
+        transition: all 0.4s ease-in-out;
+      }
+      .show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .input_error {
+        border-bottom: 2px solid $error-color;
+        color: $error-color;
+        transition: all 0.4s ease-in-out;
+        &::placeholder {
+          color: $error-color;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+      .input_success {
+        border-bottom: 2px solid $success-color;
+        color: $success-color;
+        transition: all 0.4s ease-in-out;
+        &::placeholder {
+          color: $success-color;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+    iframe {
+      width: 50%;
+      height: auto;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+}
+
+.swal2-container {
+  .swal2-popup {
+    background-color: $primary-color;
+    .swal2-title {
+      color: $secondary-color;
+    }
+    .swal2-actions {
+      .swal2-confirm {
+        background-color: $third-color;
+      }
+    }
+  }
+}

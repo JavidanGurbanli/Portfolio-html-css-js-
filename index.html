@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="scrollTop" id="scrollTop">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <header>
+      <nav>
+        <div class="nav_logo" onclick="location.reload(true)">
+          <i class="fa-solid fa-fire"></i>
+        </div>
+        <div class="nav_items">
+          <ul>
+            <li><a href="#about" onclick="scrollToSection(event)">About</a></li>
+            <li>
+              <a href="#skills" onclick="scrollToSection(event)">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio" onclick="scrollToSection(event)"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" onclick="scrollToSection(event)"
+                >Customers</a
+              >
+            </li>
+            <li><a href="#faq" onclick="scrollToSection(event)">FAQ</a></li>
+            <li>
+              <a href="#contact" onclick="scrollToSection(event)">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars mobile_open"></i>
+        <div class="mobile_menu">
+          <i class="fa-solid fa-xmark mobile_close"></i>
+          <ul>
+            <li><a href="#about" onclick="scrollToSection(event)">About</a></li>
+            <li>
+              <a href="#skills" onclick="scrollToSection(event)">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio" onclick="scrollToSection(event)"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" onclick="scrollToSection(event)"
+                >Customers</a
+              >
+            </li>
+            <li><a href="#faq" onclick="scrollToSection(event)">FAQ</a></li>
+            <li>
+              <a href="#contact" onclick="scrollToSection(event)">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="welcome">
+        <h2>HI! I'M JAVIDAN GURBANLI</h2>
+        <p>Frontend developer</p>
+        <button>
+          <a href="./assets/files/Javidan Gurbanli(new).pdf" download>CV</a>
+        </button>
+      </div>
+    </header>
+    <section id="about">
+      <div class="container">
+        <div class="about_img">
+          <img src="./assets/images/CV photo.png" alt="my_img" />
+        </div>
+        <div class="about_content">
+          <div class="content_top">
+            <h2>ABOUT ME</h2>
+            <p>
+              As a frontend developer, I am passionate about creating engaging
+              and interactive web experiences. With a strong foundation in HTML,
+              CSS, and JavaScript, I strive to bring designs to life and
+              optimize user interfaces for seamless navigation.By staying
+              updated on the latest trends and technologies, I continuously
+              expand my skill set to deliver cutting-edge solutions to clients
+              and users alike.
+            </p>
+          </div>
+          <div class="content_bottom">
+            <h2>PERSONAL INFORMATION</h2>
+            <p>Name: Javidan Gurbanli</p>
+            <hr />
+            <p>Age: 20 Years</p>
+            <hr />
+            <p>Phone: +994 50 362 60 04</p>
+            <hr />
+            <p>Email: javidangrbnl@gmail.com</p>
+            <hr />
+            <p>Address: Baku,Azerbaijan</p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h1>SKILLS</h1>
+      <div class="container">
+        <div class="skills_top">
+          <button class="tabs active">Soft skills</button>
+          <button class="tabs">Hard skills</button>
+          <div class="line"></div>
+        </div>
+        <div class="content">
+          <div class="tabs_content active">
+            <p>Problem solving</p>
+            <p>Teamworking</p>
+            <p>Time management</p>
+            <p>Patience</p>
+            <p>Flexibility</p>
+            <p>Good communication</p>
+          </div>
+          <div class="tabs_content">
+            <div class="langs_img">
+              <img src="./assets/images/html-5.png" alt="html" />
+            </div>
+            <div class="langs_img">
+              <img src="./assets/images/css-3.png" alt="css" />
+            </div>
+            <div class="langs_img">
+              <img src="./assets/images/sass.png" alt="sass" />
+            </div>
+            <div class="langs_img">
+              <img src="./assets/images/js.png" alt="js" />
+            </div>
+            <div class="langs_img">
+              <img src="./assets/images/react.png" alt="react" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h1>PORTFOLIO</h1>
+      <div class="container">
+        <div class="portfolio_buttons">
+          <button class="portfolioTabs active">All</button>
+          <button class="portfolioTabs">HTML/CSS</button>
+          <button class="portfolioTabs">JavaScript</button>
+          <button class="portfolioTabs">React</button>
+        </div>
+        <div class="portfolio_content">
+          <div class="content active">
+            <div
+              class="content_css"
+              onclick="window.open('https://javidangurbanli.github.io/Web-page/', '_blank')"
+            >
+              <div class="content_img">
+                <img
+                  src="./assets/images/css-web-design.png"
+                  alt="web-design"
+                />
+              </div>
+              <div class="content_desc">
+                <h2>Web design page</h2>
+                <p>This is a web design page</p>
+              </div>
+            </div>
+            <div
+              class="content_css"
+              onclick="window.open('https://amazing-moonbeam-41a094.netlify.app/', '_blank')"
+            >
+              <div class="content_img">
+                <img src="./assets/images/css-404.png" alt="error-404" />
+              </div>
+              <div class="content_desc">
+                <h2>404 page</h2>
+                <p>This is a error 404 page</p>
+              </div>
+            </div>
+          </div>
+          <div class="content active">
+            <div
+              class="content_js"
+              onclick="window.open('https://gilded-puffpuff-55451a.netlify.app/', '_blank')"
+            >
+              <div class="content_img">
+                <img src="./assets/images/hoverboard-js.png" alt="hoverboard" />
+              </div>
+              <div class="content_desc">
+                <h2>Hoverboard page</h2>
+                <p>This is a hoverboard page.</p>
+              </div>
+            </div>
+            <div
+              class="content_js"
+              onclick="window.open('https://elegant-dango-a21385.netlify.app/', '_blank')"
+            >
+              <div class="content_img">
+                <img
+                  src="./assets/images/tempConverter-js.png"
+                  alt="converter"
+                />
+              </div>
+              <div class="content_desc">
+                <h2>Temperature converter page</h2>
+                <p>This is a temperature converter page.</p>
+              </div>
+            </div>
+          </div>
+          <div class="content active">
+            <div
+              class="content_react"
+              onclick="window.open('https://chic-scone-33b24c.netlify.app/', '_blank')"
+            >
+              <div class="content_img">
+                <img src="./assets/images/travel-react.png" alt="travel" />
+              </div>
+              <div class="content_desc">
+                <h2>Travel page</h2>
+                <p>This is a travel page.</p>
+              </div>
+            </div>
+            <div
+              class="content_react"
+              onclick="window.open('https://tangerine-maamoul-6d9ec2.netlify.app/', '_blank')"
+            >
+              <div class="content_img">
+                <img
+                  src="./assets/images/netflix-react.png"
+                  alt="netflix-clone"
+                />
+              </div>
+              <div class="content_desc">
+                <h2>Netflix clone page</h2>
+                <p>This is netflix clone page.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+        <h2>Client reviews</h2>
+        <div class="swiper testimonials-slider">
+          <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="info-img">
+                  <img src="./assets/images/user1.png" alt="user1" />
+                </div>
+                <div class="info-text">
+                  <h3 class="name">John Doe</h3>
+                  <span class="job">Web developer</span>
+                </div>
+              </div>
+              <p>
+                The brilliant frontend developer, transformed our website with
+                his exceptional coding skills. His attention to detail and eye
+                for design made our user interface sleek and intuitive. Highly
+                recommended!
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="info-img">
+                  <img src="./assets/images/user2.png" alt="user2" />
+                </div>
+                <div class="info-text">
+                  <h3 class="name">Ethan Carter</h3>
+                  <span class="job">Graphic designer</span>
+                </div>
+              </div>
+              <p>
+                His expertise in HTML, CSS, and JavaScript brought our website
+                to life. He's a great communicator and ensured a seamless user
+                experience. Working with his was a pleasure!"
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="info-img">
+                  <img src="./assets/images/user3.png" alt="user3" />
+                </div>
+                <div class="info-text">
+                  <h3 class="name">Liam Mitchell</h3>
+                  <span class="job">Photographer</span>
+                </div>
+              </div>
+              <p>
+                His frontend development skills are second to none. He not only
+                implemented stunning designs but also optimized our website for
+                performance and responsiveness. Javidan's work significantly
+                improved our site's usability and engagement."
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="info-img">
+                  <img src="./assets/images/user4.png" alt="user4" />
+                </div>
+                <div class="info-text">
+                  <h3 class="name">Olivia Thompson</h3>
+                  <span class="job">Marketing Manager</span>
+                </div>
+              </div>
+              <p>
+                Javidan is a frontend wizard! His expertise in creating
+                responsive layouts and optimizing website performance is
+                unparalleled. Javidan's attention to detail and commitment to
+                delivering exceptional user experiences make him an invaluable
+                frontend developer.
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+        <h1 class="title">FAQ's</h1>
+        <div class="questions-container">
+          <div class="question">
+            <button class="faq_button">
+              <span> What technologies did you use to build this website?</span>
+              <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>I built this website using HTML, SCSS, and JavaScript.</p>
+          </div>
+          <div class="question">
+            <button class="faq_button">
+              <span>What should I learn after JavaScript ?</span>
+              <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>
+              I suggest taking a look at Typescript and learning some popular
+              frontend framework (Angular, React, Vue). If you are interested in
+              backend, take a look at Node. js.
+            </p>
+          </div>
+          <div class="question">
+            <button class="faq_button">
+              <span>How can I contact you for job opportunities?</span>
+              <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>
+              I'm glad you're interested! You can reach out to me through the
+              contact form on my website. Alternatively, you can send me an
+              email directly at javidangrbnl@gmail.com or connect with me on
+              professional networking platforms like LinkedIn.
+            </p>
+          </div>
+          <div class="question">
+            <button class="faq_button">
+              <span>How long will it take to learn JavaScript?</span>
+              <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>
+              The time it takes to learn JavaScript varies depending on factors
+              such as prior programming experience, dedication, and learning
+              resources. With consistent effort and focused learning, it is
+              possible to gain a solid understanding of JavaScript basics in a
+              few months.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <form class="contact_form">
+          <h2>Contact me</h2>
+          <input class="contact_name" type="text" placeholder="Your name" />
+          <input class="contact_email" type="text" placeholder="Your email" />
+          <textarea
+            class="contact_message"
+            placeholder="Write message here"
+            cols="20"
+            rows="10"
+          ></textarea>
+          <input type="submit" placeholder="SEND" />
+        </form>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3149.7295673865474!2d49.953571714205!3d40.407797711705896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDI0JzMzLjUiTiA0OcKwNTcnMTMuOSJF!5e0!3m2!1sen!2saz!4v1687967086154!5m2!1sen!2saz"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer_left">
+          <p>
+            &copy; 2023 All rights reserved | This template is made by
+            <span>Javidan Gurbanli</span>
+          </p>
+        </div>
+        <div class="footer_right">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/Cavidan2003/" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/CavidanQurbanl" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/javidangurbanli/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/JavidanGurbanli" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

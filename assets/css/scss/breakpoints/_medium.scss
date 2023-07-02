@@ -1,0 +1,58 @@
+@media screen and (max-width: 992px) {
+  header {
+    nav {
+      .nav_items {
+        display: none;
+      }
+      .mobile_open {
+        display: block;
+      }
+    }
+  }
+  #about {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+      .about_img {
+        align-self: center;
+      }
+      .about_content {
+        .content_top,
+        .content_bottom {
+          h2 {
+            text-align: center;
+          }
+        }
+        .content_bottom {
+          hr {
+            width: 500px;
+            max-width: 500px;
+          }
+        }
+      }
+    }
+  }
+  #portfolio {
+    .container {
+      .portfolio_content {
+        .content {
+          .content_css,
+          .content_js,
+          .content_react {
+            width: 300px;
+            height: 150px;
+            .content_img {
+              width: 300px;
+              height: 150px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+header {
+  width: 100%;
+  nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: $primary-color;
+    transition: all 0.4s ease-in-out;
+    z-index: 100;
+    .nav_logo {
+      position: relative;
+      width: 20%;
+      height: auto;
+      margin: auto 0;
+      text-align: center;
+      i {
+        font-size: 32px;
+        color: $secondary-color;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .nav_items {
+      position: relative;
+      width: 80%;
+      height: auto;
+      margin: auto 100px auto 300px;
+      ul {
+        position: relative;
+        display: flex;
+        column-gap: 40px;
+        li {
+          position: relative;
+          list-style: none;
+          transition: all 0.4s ease-in-out;
+          a {
+            text-decoration: none;
+            color: $secondary-color;
+            border: 0 solid $secondary-color;
+            text-transform: uppercase;
+            font-weight: 300;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+              cursor: pointer;
+              opacity: 0.5;
+            }
+          }
+          .active {
+            border-bottom: 3px solid $secondary-color;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+    .mobile_open {
+      display: none;
+      position: relative;
+      font-size: 24px;
+      color: $secondary-color;
+      margin: auto 100px auto 500px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .mobile_menu {
+      position: fixed;
+      top: 0;
+      right: 0px;
+      width: 250px;
+      height: 100vh;
+      background-color: $third-color;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      row-gap: 20px;
+      transform: translateX(100%);
+      transition: all 0.6s ease-in-out;
+      i {
+        font-size: 32px;
+        color: $secondary-color;
+        margin-left: auto;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-left: 20px;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 20px;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+              cursor: pointer;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sticky {
+    position: fixed;
+    height: 50px;
+    top: 0px;
+    background-color: $third-color;
+  }
+  .welcome {
+    width: 100%;
+    height: 350px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    row-gap: 20px;
+    text-align: center;
+    h2 {
+      color: $primary-color;
+      font-size: 38px;
+    }
+    p {
+      font-size: 28px;
+      color: $primary-color;
+    }
+    button {
+      width: 140px;
+      height: 70px;
+      border: none;
+      cursor: pointer;
+      background-color: $primary-color;
+      border-radius: 5px;
+      transition: all 0.6s ease-in-out;
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 20px;
+        transition: all 0.6s ease-in-out;
+      }
+      &:hover {
+        background-color: $white;
+        border: 1px solid $primary-color;
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.scrollTop {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 100px;
+  right: 50px;
+  background-color: $secondary-color;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2222;
+  i {
+    color: white;
+    font-size: 20px;
+    z-index: 2222;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
